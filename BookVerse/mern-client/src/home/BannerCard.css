@@ -14,27 +14,26 @@
   }
   
   .banner .swiper-slide:nth-child(1n) {
-    background-image: url('https://www.jiomart.com/images/product/original/rvfz6jn45r/2-minutes-farm-story-book-for-kids-engaging-short-stories-large-size-book-product-images-orvfz6jn45r-p596001112-0-202212030056.jpg?im=Resize=(420,420)');
+    background-image: url('https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1637602267i/58891551.jpg');
   }
   
   .banner .swiper-slide:nth-child(2n) {
-    background-image: url('src/assets/book4.png');
+    background-image: url('https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1652105350i/59575939.jpg');
   }
   
   .banner .swiper-slide:nth-child(3n) {
-    background-image: url('src/assets/book3.png');
+    background-image: url('https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1639230960i/58231065.jpg')
   }
-  
   .banner .swiper-slide:nth-child(4n) {
-    background-image: url('src/assets/book2.png');
+    background-image: url('https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1404579448i/5771014.jpg');
   }
   
   .banner.swiper-slide:nth-child(5n) {
-    background-image: url('src/assets/book1.png');
+    background-image: url('https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1651600548i/58733693.jpg');
   }
   
   .banner.swiper-slide:nth-child(6n) {
-    background-image: url('src/assets/book6.png');
+    background-image: url('https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1697158929i/199593962.jpg');
   }
   
  
