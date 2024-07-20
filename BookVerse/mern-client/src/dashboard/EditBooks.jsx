@@ -45,7 +45,7 @@ const EditBooks = () => {
 
     //console.log(bookObj);
     //update book in db
-    fetch(`http://localhost:5000/book/${id}`,{
+    fetch(`https://bookstore-3-7ite.onrender.com/book/${id}`,{
       method : "PATCH",
       headers : {
         "Content-Type" : "application/json"
