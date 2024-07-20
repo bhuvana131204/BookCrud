@@ -1,0 +1,16 @@
+# Jekyll build artifacts
+_site/
+.jekyll-cache/
+
+# Gem files
+.bundle/
+Gemfile.lock
+
+# Node modules
+node_modules/
+
+# Logs
+*.log
+
+# Environment files
+.env
