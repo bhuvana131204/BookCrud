@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 //react-icons
@@ -38,7 +38,7 @@ const Navbar = () => {
         {link: "Home", path:"/"},
         {link: "About", path:"/about"},
         {link: "Shop", path:"/shop"},
-        {link: "Sell Your Book", path:"/admin/dashboard"},
+        {link: "Manage Books", path:"/admin/dashboard"},
         {link: "Blog", path:"/blog"},
     ]
 

@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@stripe/stripe-js": "^7.3.0",
+    "caniuse-lite": "^1.0.30001718",
     "firebase": "^10.12.2",
     "flowbite": "^2.3.0",
     "flowbite-react": "^0.9.0",

@@ -1,10 +1,12 @@
-import React,{useState} from 'react'
+import {useState} from 'react'
 import {useLoaderData, useParams} from 'react-router-dom';
-import { Button, Checkbox, Label, TextInput } from "flowbite-react";
-import { Textarea } from 'flowbite-react';
+import { Button,Label, TextInput,Textarea } from "flowbite-react";
+import { useNavigate } from 'react-router-dom';
+
 const EditBooks = () => {
   const {id} = useParams();
-  const {bookTitle,authorName,imageUrl,category,description,pdfUrl} = useLoaderData();
+  const {bookTitle,authorName,imageUrl,description,pdfUrl} = useLoaderData();
+  const navigate = useNavigate();
 
   const bookCategories = [
     "Fiction",
@@ -45,15 +47,15 @@ const EditBooks = () => {
 
     //console.log(bookObj);
     //update book in db
-    fetch(`https://bookstore-3-7ite.onrender.com/book/${id}`,{
+    fetch(`http://localhost:5000/book/${id}`,{
       method : "PATCH",
       headers : {
         "Content-Type" : "application/json"
       },
       body : JSON.stringify(bookObj)
-    }).then(res => res.json()).then(data => {
+    }).then(res => res.json()).then(() => {
       alert("Book is updated successfully!!")
-      //form.reset();
+      navigate("/admin/dashboard/manage");
     })
   }
 
@@ -155,7 +157,7 @@ const EditBooks = () => {
          />
       </div>
 
-      <Button type="submit">Update Book</Button>
+      <Button type="submit" style={{"color":"black","backgroundColor":"blue"}}>Update Book</Button>
         
 
 

@@ -1,7 +1,4 @@
-import {
-    createBrowserRouter,
-    RouterProvider,
-  } from "react-router-dom";
+import {createBrowserRouter} from "react-router-dom";
 import App from "../App";
 import Home from "../home/Home";
 import Shop from "../shop/Shop";
@@ -44,7 +41,7 @@ import Users from "../dashboard/Users";
             {
                 path: "/book/:id",
                 element:<SingleBook/>,
-                loader:({params}) => fetch(`https://bookstore-3-7ite.onrender.com/book/${params.id}`) 
+                loader:({params}) => fetch(`http://localhost:5000/book/${params.id}`) 
             },
             {
                 path:"/sign-up",
@@ -83,7 +80,7 @@ import Users from "../dashboard/Users";
             {
                 path:"/admin/dashboard/edit-books/:id",
                 element : <EditBooks/>,
-                loader:({params}) => fetch(`https://bookstore-3-7ite.onrender.com/book/${params.id}`)
+                loader:({params}) => fetch(`http://localhost:5000/book/${params.id}`)
             },
             {
                 path: "/admin/dashboard/Users",

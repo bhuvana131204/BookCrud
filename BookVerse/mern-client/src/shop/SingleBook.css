@@ -1,0 +1,40 @@
+.single-book-details {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.book-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.detail-item {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.detail-label {
+  font-weight: bold;
+  color: #555;
+  margin-right: 10px;
+}
+
+.detail-value {
+  color: #333;
+}
+
+.detail-value p {
+  line-height: 1.6;
+}
+
+.detail-link {
+  color: blue;
+  text-decoration: underline;
+}
+
+.detail-link:hover {
+  color: darkblue;
+}

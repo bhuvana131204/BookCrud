@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
-import { Button, Checkbox, Label, TextInput } from "flowbite-react";
-import { Textarea } from 'flowbite-react';
+import  { useState } from 'react'
+import { Button, Label, TextInput,Textarea } from "flowbite-react";
 
 const UploadBook = () => {
   const bookCategories = [
@@ -42,13 +41,13 @@ const UploadBook = () => {
 
     console.log(bookObj);
 
-    fetch("https://bookstore-3-7ite.onrender.com/upload-book", {
+    fetch("http://localhost:5000/upload-book", {
       method : "POST",
       headers : {
         "Content-Type" : "application/json"
       },
       body : JSON.stringify(bookObj)
-    }).then(res => res.json()).then(data =>{
+    }).then(res => res.json()).then(() =>{
       alert("Book uploaded successfully!!")
       form.reset()
     }).catch(err => {

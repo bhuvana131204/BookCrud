@@ -3,7 +3,7 @@ const app = express();
 const cors = require('cors')
 const port = process.env.PORT || 5000;
 
-// middlewear 
+// middleware 
 app.use(cors());
 app.use(express.json());
 
@@ -11,10 +11,9 @@ app.get('/', (req, res) => {
     res.send('Hello World!') 
 })
 
-// mongodb confiq here
+// mongodb configuration
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
-const url = "mongodb+srv://mern-book-store:NRB77Qb9VYcpwGsi@cluster0.exfhwov.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-
+const url = "mongodb+srv://mern-book-store:3GF13SRbqjwQB0yq@cluster0.exfhwov.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(url, {
     serverApi: {
